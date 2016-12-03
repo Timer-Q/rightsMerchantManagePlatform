@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>新建商户-法人信息</title>
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="bar bar-nav">
+        <a href="javascript:history.go(-1);" class="fa fa-angle-left fa-lg"></a>
+        <h1 class="title">新建商户-法人信息</h1>
+    </header>
+    <div class="wrapper">
+        <form action="merchantBuy-abilityInfo.html">
+            <div class="btn-block-group">
+                <div class="img-content">
+                    <i class="fa fa-camera fa-2x"></i>
+                    <p class="tc f-normal">法人身份证正面</p>
+                    <input type="file" accept="image/*" capture="camera"/>
+                </div>
+                <div class="img-content">
+                    <i class="fa fa-camera fa-2x"></i>
+                    <p class="tc f-normal">法人身份证反面</p>
+                    <input type="file" accept="image/*" capture="camera"/>
+                </div>
+            </div>
+            <div class="form-content form-control-large mt10">
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-large" placeholder="＊法人代表姓名">
+                </div>
+                <div class="form-group">
+                    <select name="" id="" class="form-control form-control-large c-default">
+                        <option value="" selected="selected" data-default>＊法人代表证件类型</option>
+                        <option value="">身份证</option>
+                        <option value="">军官证</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-large" placeholder="＊证件号码">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-large" placeholder="＊法人手机号码">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-large" placeholder="＊公司注册地址">
+                </div>
+            </div>
+            <p class="form-text c-danger">请输入法人代表姓名</p>
+            <p class="btn-group">
+                <button class="btn btn-primary" type="button">保存</button>
+                <button class="btn btn-primary">下一步(3/5)</button>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

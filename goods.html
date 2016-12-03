@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>商品</title>
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/TouchSlide.1.1.js"></script>
+</head>
+
+<body>
+    <header class="bar bar-nav">
+        <a href="javascript:history.go(-1);" class="fa fa-angle-left fa-lg"></a>
+        <h1 class="title">商品排行</h1>
+    </header>
+    <div class="wrapper" id="slider-tab">
+        <ul class="slider-tab-content">
+            <li class="on">销量排行</li>
+            <li>盈利排行</li>
+        </ul>
+        <div class="slider-content">
+            <div class="wrapper-content">
+                <p class="wrapper-content-substract">
+                    <span class="pull-left"><span class="c-danger">1</span><span class="btn-num">康王蜂蜜</span></span>
+                    <span>
+                        月销量：587
+                    </span>
+                </p>
+                <p class="wrapper-content-substract">
+                    <span class="pull-left"><span class="c-warning">2</span><span class="btn-num">康王蜂蜜</span></span>
+                    <span>
+                        月销量：587
+                    </span>
+                </p>
+                <p class="wrapper-content-substract">
+                    <span class="pull-left"><span class="c-success">3</span><span class="btn-num">康王蜂蜜</span></span>
+                    <span>
+                        月销量：587
+                    </span>
+                </p>
+                <p class="wrapper-content-substract">
+                    <span class="pull-left"><span>4</span><span class="btn-num">康王蜂蜜</span></span>
+                    <span>
+                        月销量：587
+                    </span>
+                </p>
+                <p class="wrapper-content-substract">
+                    <span class="pull-left"><span>5</span><span class="btn-num">康王蜂蜜</span></span>
+                    <span>
+                        月销量：587
+                    </span>
+                </p>
+                <p class="wrapper-content-substract">
+                    <span class="pull-left"><span>6</span><span class="btn-num">康王蜂蜜</span></span>
+                    <span>
+                        月销量：587
+                    </span>
+                </p>
+                <p class="wrapper-content-substract">
+                    <span class="pull-left"><span>7</span><span class="btn-num">康王蜂蜜</span></span>
+                    <span>
+                        月销量：587
+                    </span>
+                </p>
+                <p class="wrapper-content-substract">
+                    <span class="pull-left"><span>8</span><span class="btn-num">康王蜂蜜</span></span>
+                    <span>
+                        月销量：587
+                    </span>
+                </p>
+            </div>
+            <div class="wrapper-content">
+                <p class="wrapper-content-substract">
+                    <span class="pull-left"><span class="c-danger">1</span><span class="btn-num">康王蜂蜜</span></span>
+                    <span>
+                        月总利润：¥587.00
+                    </span>
+                </p>
+                <p class="wrapper-content-substract">
+                    <span class="pull-left"><span class="c-warning">2</span><span class="btn-num">康王蜂蜜</span></span>
+                    <span>
+                        月总利润：¥586.00
+                    </span>
+                </p>
+                <p class="wrapper-content-substract">
+                    <span class="pull-left"><span class="c-success">3</span><span class="btn-num">康王蜂蜜</span></span>
+                    <span>
+                        月总利润：¥585.00
+                    </span>
+                </p>
+            </div>
+        </div>
+        <p class="btn-group"><a href="javascript:;" class="c-default">仅供查看，若需更改请联系您的客户经理</a></p>
+    </div>
+    <nav class="bar bar-tab">
+        <a href="index.html" class="tab-item">
+            <i class="fa fa-qrcode" aria-hidden="true"></i>
+            <span class="tab-label">立码付</span>
+        </a>
+        <a href="" class="tab-item">
+            <i class="fa fa-rmb" aria-hidden="true"></i>
+            <span class="tab-label">交易流水</span>
+        </a>
+        <a href="" class="tab-item active">
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+            <span class="tab-label">经营分析</span>
+        </a>
+        <a href="" class="tab-item">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <span class="tab-label">店铺管理</span>
+        </a>
+    </nav>
+    <script type="text/javascript">
+        TouchSlide({
+            slideCell: "#slider-tab",
+            effect: "leftLoop",
+            titCell: ".slider-tab-content li",
+            mainCell: ".slider-content"
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>添加商品</title>
+    <link rel="stylesheet" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/jquery-2.2.3.min.js"></script>
+</head>
+
+<body>
+    <header class="bar bar-nav">
+        <a href="javascript:history.go(-1);" class="fa fa-angle-left fa-lg"></a>
+        <h1 class="title">添加商品</h1>
+        <button class="btn-link pull-right">添加</button>
+    </header>
+    <div class="wrapper">
+        <form action="merchantBuy-contact.html">
+            <div class="form-content form-control-large mt10">
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-large" placeholder="＊请输入产品名称">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-large" placeholder="输入单件盈利－便于统计最盈利产品">
+                </div>
+                <div class="form-group">
+                    <select name="" id="" class="form-control form-control-large c-default">
+                        <option value="" selected="selected" data-default>＊选择产品分类</option>
+                        <option value="">饮料</option>
+                        <option value="">生活用品</option>
+                        <option value="">--</option>
+                        <option value="">新增</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p type="text" class="form-control form-control-large ">是否归入热门商品</p>
+                    <!-- 可以不用checkbox -->
+                    <input type="checkbox" style="width: 0;height: 0;visibility: hidden;position: absolute;z-index: -1;">
+                    <label for="select" class="switch">
+                        <div class="switch-handle"></div>
+                    </label>
+                </div>
+            </div>
+            <p class="form-text c-danger">请输入登录账号</p>
+            <p class="btn-group">
+                <button class="btn btn-primary btn-slarge" type="button">确认</button>
+            </p>
+        </form>
+    </div>
+    <script>
+        $(function () {
+            $('.switch').on('click', function(event) {
+                event.preventDefault();
+                $(this).toggleClass('active');
+                var checked = $(this).siblings('input[type=checkbox]').prop('checked');
+                $(this).siblings('input[type=checkbox]').prop({
+                    checked: !checked
+                })
+            });
+        })
+    </script>
+</body>
+
+</html>

@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title></title>
-    <script type="text/javascript">
-    	
-   		document.addEventListener('plusready', function(){
-   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
-   			
-   		});
-   		
-    </script>
-</head>
-<body>
-	
-</body>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/layout.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<div class="banner">
+			<img src="img/QRCode.svg" width="20%" height="" />
+			<p>二维码收款</p>
+		</div>
+		<div class="content">
+			<div class="thumbnail"><img src="img/search.svg" width="40%"><p>店铺管理</p></div>
+			<div class="thumbnail"><img src="img/search.svg" width="40%"><p>店员管理</p></div>
+			<div class="thumbnail"><img src="img/search.svg" width="40%"><p>终端申请</p></div>
+			<div class="thumbnail"><img src="img/search.svg" width="40%"><p>商户关联</p></div>
+			<div class="thumbnail"><img src="img/search.svg" width="40%"><p>交易分析</p></div>
+			<div class="thumbnail"><img src="img/search.svg" width="40%"><p>单笔查询</p></div>
+			<div class="thumbnail"><img src="img/search.svg" width="40%"><p>我要提现</p></div>
+			<div class="thumbnail"><img src="img/search.svg" width="40%"><p>更多</p></div>
+		</div>
+		<div class="content content-gray">
+			<img src="./img/banner.png" alt="">
+		</div>
+		<nav class="bar bar-tab">
+			<a href="index.html" class="tab-item active">
+				<i class="fa fa-home" aria-hidden="true"></i>
+				<span class="tab-label">首页</span>
+			</a>
+			<a href="" class="tab-item">
+				<i class="fa fa-rmb" aria-hidden="true"></i>
+				<span class="tab-label">交易</span>
+			</a>
+			<a href="" class="tab-item">
+				<i class="fa" aria-hidden="true"></i>
+				<span class="tab-label">店铺</span>
+			</a>
+			<a href="" class="tab-item">
+				<i class="fa fa-user" aria-hidden="true"></i>
+				<span class="tab-label">我的</span>
+			</a>
+		</nav>
+	</body>
+
 </html>
